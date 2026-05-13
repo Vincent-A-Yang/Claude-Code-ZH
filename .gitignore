@@ -1,0 +1,38 @@
+# Local Claude/Codex state
+.claude/
+.codex/
+Claude-3p/
+backups/
+logs/
+*.log
+
+# Secrets and private configs
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*token*
+*secret*
+*credential*
+claude_desktop_config.json
+.claude.json
+settings.local.json
+
+# Generated artifacts
+dist/
+build/
+tmp/
+temp/
+node_modules/
+*.asar.unpacked/
+*.bak
+*.backup
+*.orig
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

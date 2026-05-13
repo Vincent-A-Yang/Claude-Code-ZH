@@ -1,0 +1,35 @@
+[
+  {
+    "name": "context7",
+    "category": "local-stdio",
+    "command": "cmd",
+    "args": ["/c", "context7-mcp.cmd", "--transport", "stdio"],
+    "risk": "low",
+    "verified": false,
+    "notes": "Run scripts/Test-McpServer.ps1 before adding to Claude."
+  },
+  {
+    "name": "remote-browser",
+    "category": "local-wrapper-remote-dependency",
+    "command": "node",
+    "args": ["C:\\Path\\To\\browser-wrapper.mjs"],
+    "env": {
+      "BROWSER_CDP_WS": "ws://host.example.local:9222/"
+    },
+    "risk": "medium",
+    "verified": false,
+    "notes": "Verify remote CDP health separately."
+  },
+  {
+    "name": "github",
+    "category": "cloud-token",
+    "command": "cmd",
+    "args": ["/c", "github-mcp.cmd"],
+    "env": {
+      "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+    },
+    "risk": "high",
+    "verified": false,
+    "notes": "Use a least-privilege token and do not commit it."
+  }
+]

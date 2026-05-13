@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(**/.env*)",
+      "Read(**/secrets/**)",
+      "Read(**/*token*)",
+      "Read(**/*credential*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)"
+    ]
+  },
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://gateway.example.com",
+    "ANTHROPIC_MODEL": "claude-sonnet-4-5"
+  }
+}

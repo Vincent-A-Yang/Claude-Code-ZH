@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "cmd",
+      "args": ["/c", "context7-mcp.cmd", "--transport", "stdio"]
+    },
+    "example-local-tool": {
+      "command": "node",
+      "args": ["C:\\Path\\To\\example-mcp-server.mjs"],
+      "env": {
+        "EXAMPLE_MODE": "stdio"
+      }
+    },
+    "example-cloud-tool": {
+      "command": "cmd",
+      "args": ["/c", "example-cloud-mcp.cmd"],
+      "env": {
+        "EXAMPLE_API_KEY": "${EXAMPLE_API_KEY}"
+      }
+    }
+  }
+}

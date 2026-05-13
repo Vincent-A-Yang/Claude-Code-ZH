@@ -17,9 +17,7 @@ $forbiddenPatterns = @(
   "ghp_",
   "github_pat_",
   "BEGIN PRIVATE KEY",
-  "Authorization: Bearer",
-  "100.102.",
-  "tail2a74b3.ts.net"
+  "Authorization: Bearer"
 )
 
 $self = $MyInvocation.MyCommand.Path

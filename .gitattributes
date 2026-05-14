@@ -3,6 +3,7 @@
 *.json text eol=lf
 *.svg text eol=lf
 *.ps1 text eol=crlf
+scripts/*.ps1 linguist-documentation
 *.yml text eol=lf
 *.yaml text eol=lf
 *.sh text eol=lf
